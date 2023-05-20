@@ -11,4 +11,4 @@ Things I will use to build this website
 1. Complete building and deployment with IAC(Infrastructure as Code).
 1. GitHub Actions for CI & CD.
 1. Cloudflare as main cloudprovider.
-1. Tailwind for CSS
+1. Tailwind for CSS.
