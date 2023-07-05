@@ -1,4 +1,4 @@
-# Nuxt Content
+# [suba.sh](https://suba.sh)
 
 This is my website, I'm going to use this website to learn technologies.
 ---

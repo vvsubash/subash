@@ -1,4 +1,14 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ['@nuxt/content']
+  app: {
+    head: {
+      link: [
+        {
+          rel: "stylesheet", href: "https://unpkg.com/concrete.css@2.0.3/concrete.css"
+        }
+      ]
+    }
+  },
+  modules: ['@nuxt/content'],
+
 })
