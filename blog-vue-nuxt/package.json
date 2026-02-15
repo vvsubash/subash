@@ -1,0 +1,23 @@
+{
+  "name": "subash-tech-blog",
+  "version": "1.0.0",
+  "description": "Personal technical blog, deployed to Cloudflare Pages",
+  "scripts": {
+    "dev": "hugo server --buildDrafts",
+    "build": "hugo --minify",
+    "deploy": "wrangler pages deploy public --project-name subash-tech-blog",
+    "clean": "rm -rf public resources"
+  },
+  "keywords": [
+    "hugo",
+    "blog",
+    "tech",
+    "personal",
+    "cloudflare"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.x.x"
+  }
+}

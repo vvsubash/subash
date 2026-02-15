@@ -1,0 +1,21 @@
+name = "subash-tech-blog"
+type = "javascript"
+account_id = ""  # Add your Cloudflare account ID here
+workers_dev = true
+route = ""       # Add your domain here (optional)
+zone_id = ""     # Add your zone ID if using custom domain
+
+[env.production]
+name = "subash-tech-blog-prod"
+route = "example.com/*"
+
+[build]
+command = "hugo --minify"
+cwd = "./"
+watch_paths = ["content/**/*.md", "config/**/*", "layouts/**/*"]
+
+[build.upload]
+format = "service-worker"
+
+[env.production.build]
+command = "hugo --minify"

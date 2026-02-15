@@ -1,0 +1,145 @@
+baseURL = 'https://suba.sh/'
+languageCode = 'en-us'
+title = "Subash's Tech Blog"
+description = 'Personal technical blog covering web development, software engineering, and modern frameworks.'
+theme = 'blowfish'
+
+# Output formats for SEO
+outputs = { home = ["HTML", "JSON", "RSS"] }
+
+# Enable sitemap
+enableSitemap = true
+
+# Enable robots.txt
+enableRobotsTXT = true
+
+# Pagination settings
+[pagination]
+pagerSize = 10
+
+# Pluralize section titles
+pluralizeListTitles = false
+
+# Output directories
+publishDir = "public"
+
+# Markup settings for better SEO
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+  [markup.highlight]
+    style = "github-dark"
+
+# Menu configuration
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 10
+
+[[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 20
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 30
+
+[[menu.main]]
+  name = "About"
+  url = "/pages/about/"
+  weight = 40
+
+# Permalinks for better SEO
+[permalinks]
+  posts = "/posts/:slug/"
+
+# Minify output
+[minify]
+  minifyOutput = true
+
+# Theme parameters
+[params]
+  colorScheme = "ocean"
+  defaultAppearance = "dark"
+  autoSwitchAppearance = true
+  description = "Personal technical blog covering web development and software engineering"
+
+  enableSearch = true
+  enableCodeCopy = true
+  enableStructuredBreadcrumbs = true
+
+  mainSections = ["posts"]
+  robots = "index, follow"
+
+  highlightCurrentMenuArea = true
+
+  [params.header]
+    layout = "fixed"
+
+  [params.footer]
+    showMenu = true
+    showCopyright = true
+    showThemeAttribution = true
+    showAppearanceSwitcher = true
+    showScrollToTop = true
+
+  [params.homepage]
+    layout = "profile"
+    showRecent = true
+    showRecentItems = 6
+    showMoreLink = true
+    showMoreLinkDest = "/posts/"
+    cardView = true
+    cardViewScreenWidth = false
+
+  [params.article]
+    showDate = true
+    showDateUpdated = false
+    showAuthor = true
+    showHero = false
+    showBreadcrumbs = true
+    showDraftLabel = true
+    showEdit = false
+    showHeadingAnchors = true
+    showPagination = true
+    showReadingTime = true
+    showTableOfContents = true
+    showTaxonomies = true
+    showWordCount = false
+    showZenMode = false
+
+  [params.list]
+    showHero = false
+    showBreadcrumbs = false
+    showSummary = true
+    showTableOfContents = false
+    showCards = true
+    groupByYear = true
+    cardView = true
+    cardViewScreenWidth = false
+
+  [params.taxonomy]
+    showTermCount = true
+    showBreadcrumbs = false
+    cardView = false
+
+  [params.term]
+    showBreadcrumbs = false
+    showTableOfContents = false
+    groupByYear = false
+    cardView = true
+    cardViewScreenWidth = false
+
+  [params.author]
+    name = "Venkata Subash"
+    email = "venkatasubash@hotmail.com"
+    headline = "Frontend Developer"
+    bio = "Building fast, accessible web apps with Vue.js, Nuxt, React, and TypeScript. I write about what I learn."
+    links = [
+      { link = "https://suba.sh" },
+      { github = "https://github.com" },
+      { email = "mailto:venkatasubash@hotmail.com" },
+    ]
