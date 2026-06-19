@@ -1,0 +1,3 @@
+[submodule "blog-vue-nuxt/themes/blowfish"]
+	path = blog-vue-nuxt/themes/blowfish
+	url = https://github.com/nunocoracao/blowfish.git

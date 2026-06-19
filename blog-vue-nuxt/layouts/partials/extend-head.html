@@ -1,0 +1,6 @@
+<!-- 
+  Modern Web Best Practice: Block rendering until the main page content is parsed.
+  This ensures cross-document view transitions snapshot a fully-rendered above-the-fold view,
+  preventing visual flashing or partial page transitions.
+-->
+<link rel="expect" href="#main-content" blocking="render">

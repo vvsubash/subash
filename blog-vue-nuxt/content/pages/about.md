@@ -12,11 +12,11 @@ I'm a frontend developer based in Visakhapatnam, India. I build web applications
 
 ## What I've Been Working On
 
-**Shareplay.tv** (Mar 2024 - Present) — Frontend Developer on a game streaming platform. Built a custom design system from scratch, implemented live streaming and chat features with WebSockets, and optimized performance for handling multiple streams on mobile devices with accessibility baked in.
+**Shareplay.tv** — Frontend Developer on a game streaming platform. Built a custom design system from scratch, implemented live streaming and chat features with WebSockets, and optimized performance for handling multiple streams on mobile devices with accessibility baked in.
 
-**Fuel Buddy** (Nov 2022 - Jul 2023) — Built a B2C fuel delivery web app with Vue.js and Pinia for state management. Integrated real-time location tracking with maps, and used GraphQL with Hasura + PostgreSQL for the API layer. Leveraged GraphQL Codegen to streamline frontend-backend interactions.
+**Fuel Buddy** — Built a B2C fuel delivery web app with Vue.js and Pinia for state management. Integrated real-time location tracking with maps, and used GraphQL with Hasura + PostgreSQL for the API layer. Leveraged GraphQL Codegen to streamline frontend-backend interactions.
 
-**Sphiro Infratech** (Nov 2018 - Nov 2022) — Built an ERP solution using Firebase, Google Cloud Storage, Nuxt, and Vue.js to replace Excel-based workflows for managing stores, RFI, and billing records.
+**Sphiro Infratech** — Built an ERP solution using Firebase, Google Cloud Storage, Nuxt, and Vue.js to replace Excel-based workflows for managing stores, RFI, and billing records.
 
 ## What You'll Find Here
 

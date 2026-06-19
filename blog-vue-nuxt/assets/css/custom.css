@@ -1,0 +1,44 @@
+@view-transition {
+  navigation: auto;
+}
+
+/* Keep the blog title static and persistent across navigations */
+.main-menu a.truncate {
+  view-transition-name: blog-title;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Premium transition animation: subtle fade and slide up */
+  ::view-transition-old(root) {
+    animation: 200ms cubic-bezier(0.4, 0, 1, 1) both fade-out;
+  }
+
+  ::view-transition-new(root) {
+    animation: 250ms cubic-bezier(0, 0, 0.2, 1) both fade-in,
+               300ms cubic-bezier(0.34, 1.56, 0.64, 1) both slide-up;
+  }
+}
+
+/* Disable transition animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(8px); }
+  to { transform: translateY(0); }
+}
